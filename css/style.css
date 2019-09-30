@@ -1,0 +1,296 @@
+:root{
+    --primary-color:green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+nav{
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+  box-shadow: 0 5px 10px gray;  
+  
+}
+.nav-bar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+  align-items: center;
+}
+.spaar {
+  border-radius: 25px;
+  background: var(--primary-color);
+  padding: .7rem;
+  text-align: center;
+  position: relative;
+  transition: all .5s;
+  overflow: hidden;
+  border: 2px solid var(--primary-color);
+  
+}
+.spaar:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 00%;
+  top: 50%;
+  left: 0; 
+  background:white;  
+  transition: all .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.spaar:hover {
+  background: none;
+  
+}
+.spaar:hover:after {
+  content: attr(data);
+  top:0;  
+  height: 100%; 
+}
+
+.spaar a {
+  color: white;
+}
+
+section {
+  clip-path: ellipse(75% 77% at 50% 23%);
+  background: url("https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/pick_2019_zom_ocht_0246.jpg?preset=block-background")
+    no-repeat center center/cover;
+  height: 80vh;
+  
+}
+section .container {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section .container > div {
+  flex-basis: 25%;
+  color: white;
+}
+section .container h1 {
+  padding-bottom: 2rem;
+  font-size: 100px;
+}
+section .container p {
+  max-width: 50%;
+}
+.part1{
+  padding-top: 3rem;
+}
+.part1 .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 4rem;
+  
+}
+.part1 .container .item1, .part1 .container .item10 {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 4rem 3rem 4rem 0;
+}
+.part1 .container .item1 h1, .part1 .container .item10 h1 {
+  color: var(--primary-color);
+  font-size: 50px;
+}
+/* .part1 .container .item1 a,
+.part1 .container .item10 a {
+  color: white;
+  
+} */
+.part1 .container a {
+  color: white;
+}
+.part1 .container .item2 {
+  display: flex;
+  grid-column: span 6;
+}
+.part1 .container img {
+  width: 100%;
+  /* height: 50vh; */
+}
+.btn1 {
+  border-radius: 25px;
+  background: var(--primary-color);
+  padding: 15px;
+  color: white;
+  margin: 2rem;
+  
+}
+.part1 .container .item3, .part1 .container .item11 {
+  grid-column: span 12;
+  text-align: center;
+  padding: 3rem;
+  color: var(--primary-color);
+}
+.images{
+    background: lavender;
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    color: white;
+    padding: 1rem;    
+    font-weight: bolder;    
+    background: var(--primary-color)
+}
+.r1{
+    border-radius: 0 50%;
+}
+.r2{
+    border-radius: 50% 0;
+}
+.images .container {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    align-items: flex-end;
+    grid-gap: 3rem;
+    overflow: hidden;
+}
+.images .container .element-img a{
+    font-size: 20px;
+    color: black;
+}
+.images .container .element-img:hover a{
+    color: var(--primary-color);
+}
+.images .container .element-img{
+    margin-bottom: 1rem;
+    
+}
+.images .container img{
+    margin-bottom: 3rem;
+    width: 60%;    
+    transition:transform .3s ease-in-out;
+}
+.images .container .element-img:hover img{
+    transform:translateY(-20px)
+}
+.images .container .img-items{
+    padding: 1rem;
+    text-align: center;
+}
+.part1 .container .item8{
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 2rem;
+}
+.part1 .container .item9{
+  grid-column: span 6;
+  
+}
+
+.part1 .container .item10{
+  grid-column: span 5;
+}
+.part1 .container .item12,
+.part1 .container .item13,
+.part1 .container .item14,
+.part1 .container .item15,
+.part1 .container .item16,
+.part1 .container .item17,
+.part1 .container .item18,
+.part1 .container .item19,
+.part1 .container .item20{
+  grid-column: span 4;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 20px;
+}
+.part1 .container .item18,
+.part1 .container .item19,
+.part1 .container .item20{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  font-size: 15px;
+}
+.register{
+  background: url('https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/newsletter-desktop.png') ;
+  height: 120vh;
+}
+.register .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.register .container .content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  padding-top: 3rem;
+}
+.register .container .content h1{
+  color: var(--primary-color);
+}
+.register .container .content *{
+  padding-top: 1rem;
+  /* padding-bottom: 1rem; */
+}
+input[type="text"]{
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0.5;
+  border: none;
+}
+/* .email {
+  width: 100%;
+} */
+form{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+}
+form .voor{
+  
+  grid-column: 1/ span 2;
+}
+form .achter{
+  grid-column: span 2;
+}
+form .email{
+  grid-column: span 4;
+}
+.voorwaarden #test {
+  padding: 0;
+  display: inline-block;  
+  width: 80%;
+  vertical-align:top;
+}
+input[type="checkbox"],input[type="radio"]{
+  color: var(--primary-color);
+  transform: scale(2);
+  margin-right: 1rem;
+  background-size: 20px;
+}
