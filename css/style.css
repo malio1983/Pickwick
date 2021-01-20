@@ -75,7 +75,8 @@ nav{
 
 section {
   clip-path: ellipse(75% 77% at 50% 23%);
-  background: url("https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/pick_2019_zom_ocht_0246.jpg?preset=block-background")
+  /* background: url("https://www.pickwick.nl/siteassets/_new/iconselements/header-visuals/pick_2019_zom_ocht_0246.jpg?preset=block-background") */
+  background: url("/images/bg-pickwick.jpg")
     no-repeat center center/cover;
   height: 80vh;
   
